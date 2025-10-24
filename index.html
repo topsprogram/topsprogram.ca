@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPS Program - Toronto, Canada</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: -8%;
+            min-height: 100vh;
+        }
+        #schools {
+            margin-top: 2em;
+            display: flex;
+            flex-direction: row;
+            gap: 5em;
+        }
+        small {
+            font-size: 0.9em;
+        }
+        h2 {
+            font-weight: normal;
+        }
+        h1,h2,p,small {
+            margin: 0.2em 0;
+        }
+        @media (max-width: 768px) {
+             #schools {
+                 flex-direction: column;
+                 gap: 2em;
+             }
+         }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>TOPS Program</h1>
+        <p><small>Est. 1987 in Toronto, Canada</small></p>
+        <div id="schools">
+            <div>
+                <a href="#"><h2>Marc Garneau CI</h2></a>
+                <i>135 Overlea Boulevard</i>
+            </div>
+            <div>
+                <a href="#"><h2>Bloor CI</h2></a>
+                <i>1141 Bloor Street West</i>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
