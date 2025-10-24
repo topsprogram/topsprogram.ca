@@ -48,6 +48,14 @@
              }
          }
     </style>
+    <script async src="https://cdn.seline.com/seline.js" data-token="747b826dd6459b5"></script>
+    <script>
+        function trackSchoolClick(schoolName) {
+            if (window.seline) {
+                window.seline.track('school_link_click', { school: schoolName });
+            }
+        }
+    </script>
 </head>
 <body>
     <main>
@@ -55,11 +63,11 @@
         <p>Est. 1987 in Toronto, Canada</p>
         <div id="schools">
             <div>
-                <a href="https://mgci.topsprogram.ca" target="_blank" alt="TOPS at Marc Garneau CI"><h2>Marc Garneau CI</h2></a>
+                <a href="https://mgci.topsprogram.ca" target="_blank" alt="TOPS at Marc Garneau CI" onclick="trackSchoolClick('Marc Garneau CI')"><h2>Marc Garneau CI</h2></a>
                 <i>135 Overlea Boulevard</i>
             </div>
             <div>
-                <a href="https://bci.topsprogram.ca" target="_blank" alt="TOPS on Bloor"><h2>Bloor CI</h2></a>
+                <a href="https://bci.topsprogram.ca" target="_blank" alt="TOPS on Bloor" onclick="trackSchoolClick('Bloor CI')"><h2>Bloor CI</h2></a>
                 <i>90 Croatia Street</i>
             </div>
         </div>
