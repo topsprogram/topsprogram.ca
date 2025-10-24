@@ -14,14 +14,20 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: -8%;
+            margin-top: -5%;
             min-height: 100vh;
+        }
+        main {
+            min-width: 390px;
         }
         #schools {
             margin-top: 2em;
             display: flex;
             flex-direction: row;
-            gap: 5em;
+            justify-content: space-between;
+        }
+        #quote {
+            margin-top: 8em;
         }
         small {
             font-size: 0.9em;
@@ -33,6 +39,9 @@
             margin: 0.2em 0;
         }
         @media (max-width: 768px) {
+            body {
+                margin-top: -10%;
+            }
              #schools {
                  flex-direction: column;
                  gap: 2em;
@@ -43,17 +52,23 @@
 <body>
     <main>
         <h1>TOPS Program</h1>
-        <p><small>Est. 1987 in Toronto, Canada</small></p>
+        <p>Est. 1987 in Toronto, Canada</p>
         <div id="schools">
             <div>
-                <a href="#"><h2>Marc Garneau CI</h2></a>
+                <a href="https://mgci.topsprogram.ca" target="_blank" alt="TOPS at Marc Garneau CI"><h2>Marc Garneau CI</h2></a>
                 <i>135 Overlea Boulevard</i>
             </div>
             <div>
-                <a href="#"><h2>Bloor CI</h2></a>
-                <i>1141 Bloor Street West</i>
+                <a href="https://bci.topsprogram.ca" target="_blank" alt="TOPS on Bloor"><h2>Bloor CI</h2></a>
+                <i>90 Croatia Street</i>
             </div>
         </div>
+<!-- 
+        <div id="quote">
+            <p>“If I have seen further, it is by standing on the shoulders of giants.”</p>
+            <p><small>– Sir Isaac Newton</small></p>
+        </div>
+-->
     </main>
 </body>
 </html>
